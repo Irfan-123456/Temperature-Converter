@@ -1,0 +1,12 @@
+let uservalue = document.getElementsById("input");
+let btn = document.getElementsById("btn");
+let showValue = document.getElementsById("Value");
+
+btn.onclick = function (){
+    if (uservalue.value){
+        let data = ((uservalue.value - 32) * 5) / 9;
+        showValue.innerHTML = data + "°C";
+    } else {
+        alert("Enter value");
+    }
+};
